@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/aws/aws-lambda-go/events"
-	"github.com/bradfitz/gomemcache/memcache"
 	"net/http"
 	"os"
 	"strings"
 
+	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/bradfitz/gomemcache/memcache"
 )
 
 type ServerInfo struct {
